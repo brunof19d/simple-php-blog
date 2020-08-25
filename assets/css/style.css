@@ -1,0 +1,41 @@
+:root {
+    /*Backgrounds*/
+    --primary: lightgrey;
+    --secondary: #f1f1f1;
+    --third: mediumblue;
+}
+
+html body {
+    background-color: var(--secondary);
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    border: 5px solid var(--primary);
+}
+
+.banner {
+    background: url("../images/php-header.jpg");
+    height: 240px;
+    background-size: auto auto;
+    background-repeat: no-repeat;
+    border: 5px solid var(--primary);
+}
+
+.main {
+    border: 5px solid var(--primary);
+}
+
+.title-post {
+    text-align: center;
+    color: mediumblue;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px solid var(--third);
+}
+
+.content-post {
+    border: 1px solid var(--third);
+    border-radius: 10px;
+}
