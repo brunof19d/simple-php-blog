@@ -1,3 +1,13 @@
+<?php
+
+require "database.php";
+require "src/PostRepository.php";
+
+$result = new PostRepository($pdo);
+$results = $result->searchAll();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,19 +24,19 @@
 
 <div class="container-xl mt-3 main">
 
-    <!-- Title Post -->
-    <div class="row">
-        <div class="col-xl-12 mt-1 title-post">Title Post</div>
-    </div>
-
-    <!-- Content Post -->
-    <div class="row">
-        <div class="col-xl-12 mt-1 mb-5 content-post">
-            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget odio eget enim sodales aliquam. 
-            Nulla varius feugiat condimentum. Nulla at erat orci. Praesent sit amet malesuada elit. 
-            Donec eget purus eu felis vestibulum dapibus. Donec molestie fringilla ligula, at vehicula augue dictum sed.</p>
+    <?php foreach ($results as $result) : ?>
+        <!-- Title Post -->
+        <div class="row">
+            <div class="col-xl-12 mt-1 title-post"><?php echo $result['name_title']; ?></div>
         </div>
-    </div>
+
+        <!-- Content Post -->
+        <div class="row">
+            <div class="col-xl-12 mt-1 mb-5 content-post">
+                <p class="mt-1"><?php echo $result['content_post']; ?></p>
+            </div>
+        </div>
+    <?php endforeach; ?>
     
 </div>
 

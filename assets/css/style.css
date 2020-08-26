@@ -15,6 +15,15 @@ footer {
     border: 5px solid var(--primary);
 }
 
+h1 {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background-color: #343a40;
+    ;
+    ;
+}
+
 .banner {
     background: url("../images/php-header.jpg");
     height: 240px;
@@ -29,6 +38,13 @@ footer {
 
 .title-post {
     text-align: center;
+    color: mediumblue;
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px solid var(--third);
+}
+
+.title-post-admin {
     color: mediumblue;
     background-color: lightgrey;
     border-radius: 10px;
