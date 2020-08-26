@@ -27,10 +27,10 @@ $results = $result->searchAll();
 
     <nav class="navbar navbar-expand bg-dark navbar-dark container-xl mt-3 main d-flex bg-dark">
         <ul class="navbar-nav m-auto">
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item btn-add-article btn-success">
                 <a class="nav-link" href="#">Add Article</a>
             </li>
             <li class="nav-item">
@@ -43,19 +43,15 @@ $results = $result->searchAll();
     <?php foreach ($results as $result) { ?>
         <div class="container-xl mt-3 title-post-admin">
             <?php echo $result['name_title']; ?>
-
-            <a class="btn" href="editar-artigo.php?id=<?php echo $result['id']; ?>">
-                Editar
-            </a>
-            <a class="btn" href="excluir-artigo.php?id=<?php echo $result['id']; ?>">
-                Excluir
-            </a>
-
+            <div class="d-flex justify-content-center">
+                <a class="btn btn-info m-2" href="edit.php?id=<?php echo $result['id']; ?>"> Edit </a>
+                <a class="btn btn-danger m-2" href="delete.php?id=<?php echo $result['id']; ?>"> Delete </a>
+            </div>
         </div>
     <?php } ?>
 
 
-    <footer class="container-xl mt-5">Copyright 2020 Simple Blog with PHP</footer>
+    <footer class="container-xl mt-3">Copyright 2020 Simple Blog with PHP</footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

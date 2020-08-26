@@ -32,7 +32,7 @@ $results = $result->searchAll();
 
         <!-- Content Post -->
         <div class="row">
-            <div class="col-xl-12 mt-1 mb-5 content-post">
+            <div class="col-xl-12 mt-1 mb-1 content-post">
                 <p class="mt-1"><?php echo $result['content_post']; ?></p>
             </div>
         </div>

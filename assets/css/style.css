@@ -20,8 +20,10 @@ h1 {
     color: white;
     text-align: center;
     background-color: #343a40;
-    ;
-    ;
+}
+
+a {
+    text-align: center;
 }
 
 .banner {
@@ -45,13 +47,20 @@ h1 {
 }
 
 .title-post-admin {
+    font-size: 20px;
     color: mediumblue;
     background-color: lightgrey;
     border-radius: 10px;
     border: 1px solid var(--third);
+    text-align: center;
 }
 
 .content-post {
     border: 1px solid var(--third);
+    border-radius: 10px;
+}
+
+.btn-add-article {
+    border: 1px solid lightgrey;
     border-radius: 10px;
 }
