@@ -25,30 +25,34 @@ $results = $result->searchAll();
     <h1 class="container-xl mt-3 p-2 main">Administrative page</h1>
 
 
-    <nav class="navbar navbar-expand bg-dark navbar-dark container-xl mt-3 main d-flex bg-dark">
-        <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
+    <nav class="container-xl mt-3 p-2 main navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item btn-add-article btn-success">
-                <a class="nav-link" href="#">Add Article</a>
-            </li>
+        </ul>
+
+        <ul class="nav navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="#">Logout</a>
             </li>
+
         </ul>
     </nav>
 
+    <div class="container-xl d-flex justify-content-center mt-2 ">
+        <button class="btn btn-success">Add article</button>
+    </div>
 
-    <?php foreach ($results as $result) { ?>
+    <?php foreach ($results as $result) : ?>
         <div class="container-xl mt-3 title-post-admin">
-            <?php echo $result['name_title']; ?>
+            <a href="#"><?php echo $result['name_title']; ?></a>
             <div class="d-flex justify-content-center">
                 <a class="btn btn-info m-2" href="edit.php?id=<?php echo $result['id']; ?>"> Edit </a>
                 <a class="btn btn-danger m-2" href="delete.php?id=<?php echo $result['id']; ?>"> Delete </a>
             </div>
         </div>
-    <?php } ?>
+    <?php endforeach; ?>
 
 
     <footer class="container-xl mt-3">Copyright 2020 Simple Blog with PHP</footer>
