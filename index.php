@@ -1,7 +1,7 @@
 <?php
 
 require "database.php";
-require "src/PostRepository.php";
+require "PostRepository.php";
 
 $result = new PostRepository($pdo);
 $results = $result->searchAll();
@@ -30,7 +30,7 @@ $results = $result->searchAll();
         <?php foreach ($results as $result) : ?>
             <!-- Title Post -->
             <div class="row">
-                <div class="col-xl-12 mt-1 title-post"><?php echo $result['name_title']; ?></div>
+                <div class="col-xl-12 mt-2 title-post"><?php echo $result['name_title']; ?></div>
             </div>
 
             <!-- Content Post -->

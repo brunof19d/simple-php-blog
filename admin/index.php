@@ -1,7 +1,7 @@
 <?php
 
-require "../database.php";
-require "../src/PostRepository.php";
+require "database.php";
+require "PostRepository.php";
 
 $result = new PostRepository($pdo);
 $results = $result->searchAll();
@@ -12,7 +12,7 @@ require_once "includes/header-admin.php";
 
 <div class="container-xl d-flex justify-content-center mt-2 ">
 
-    <button class="btn btn-success">Add article</button>
+    <a href="add-article.php" class="btn btn-success">Add article</a>
 
 </div>
 

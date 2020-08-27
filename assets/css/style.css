@@ -44,7 +44,7 @@ a {
     color: mediumblue;
     background-color: lightgrey;
     border-radius: 10px;
-    border: 1px solid var(--third);
+    border: 1px solid var(--primary);
 }
 
 .title-post-admin {
@@ -52,12 +52,19 @@ a {
     color: mediumblue;
     background-color: lightgrey;
     border-radius: 10px;
-    border: 1px solid var(--third);
+    border: 1px solid var(--thprimaryird);
+    text-align: center;
+}
+
+.show-article-admin {
+    background-color: lightgrey;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
     text-align: center;
 }
 
 .content-post {
-    border: 1px solid var(--third);
+    border: 1px solid var(--primary);
     border-radius: 10px;
 }
 

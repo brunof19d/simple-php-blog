@@ -5,6 +5,7 @@ class Content
     private $id;
     private $name;
     private $content;
+    private $date;
 
     public function setId($id)
     {
@@ -34,5 +35,15 @@ class Content
     public function getContent()
     {
         return $this->content;
+    }
+
+    public function setDate($date)
+    {
+        $this->date = $date;
+    }
+
+    public function getDate()
+    {
+        return $this->date;
     }
 }
