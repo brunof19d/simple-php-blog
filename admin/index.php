@@ -25,7 +25,7 @@ require_once "includes/header-admin.php";
 
         <div class="d-flex justify-content-center">
             <a class="btn btn-info m-2" href="edit.php?id=<?php echo $result['id']; ?>"> Edit </a>
-            <a class="btn btn-danger m-2" href="delete.php?id=<?php echo $result['id']; ?>"> Delete </a>
+            <a class="btn btn-danger m-2" href="delete-article.php?id=<?php echo $result['id']; ?>"> Delete </a>
         </div>
     </div>
 <?php endforeach; ?>

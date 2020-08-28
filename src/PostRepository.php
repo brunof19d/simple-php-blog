@@ -44,4 +44,14 @@ class PostRepository
         ]);
     }
 
+    public function deleteArticle($id)
+    {
+        $sql = "DELETE FROM content WHERE id = :id ";
+
+        $statement = $this->pdo->prepare($sql);
+
+        $statement->execute([
+            'id' => $id,
+        ]);
+    }
 }

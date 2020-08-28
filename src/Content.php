@@ -37,15 +37,4 @@ class Content
         return $this->content;
     }
 
-    public function setDate($date)
-    {
-        $this->date = $date;
-        $date = new DateTime('');
-        $date->format('Y-m-d');
-    }
-
-    public function getDate()
-    {
-        return $this->date;
-    }
 }
