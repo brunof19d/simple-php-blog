@@ -40,6 +40,8 @@ class Content
     public function setDate($date)
     {
         $this->date = $date;
+        $date = new DateTime('');
+        $date->format('Y-m-d');
     }
 
     public function getDate()

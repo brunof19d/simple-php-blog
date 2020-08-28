@@ -31,12 +31,16 @@ $results = $result->searchAll();
             <!-- Title Post -->
             <div class="row">
                 <div class="col-xl-12 mt-2 title-post"><?php echo $result['name_title']; ?></div>
+                
             </div>
 
             <!-- Content Post -->
             <div class="row">
                 <div class="col-xl-12 mt-1 mb-1 content-post">
                     <p class="mt-1"><?php echo $result['content_post']; ?></p>
+                    <div class="mt-1">
+                        <p class="mt-1"><?php echo $result['date_post']; ?></p>
+                    </div>
                 </div>
             </div>
         <?php endforeach; ?>

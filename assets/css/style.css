@@ -71,3 +71,9 @@ a {
 .btn {
     border-radius: 20px;
 }
+
+.error-form {
+    color: red;
+    font-size: 18px;
+    font-style: italic;
+}

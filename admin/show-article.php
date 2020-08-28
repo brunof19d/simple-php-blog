@@ -17,7 +17,8 @@ require_once "includes/header-admin.php";
     </div>
 
     <div class="container-xl mt-1 show-article-admin">
-        <?php echo $results['content_post'];  ?>
+        <p class="mt-2"><?php echo nl2br($results['content_post']);  ?></p>
+        
 
         <div class=" mt-1">
             <hr>
@@ -29,6 +30,6 @@ require_once "includes/header-admin.php";
             </p>
         </div>
     </div>
-
 </div>
 <?php require_once "includes/footer-admin.php"; ?>
+
