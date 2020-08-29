@@ -52,7 +52,7 @@ a {
     color: mediumblue;
     background-color: lightgrey;
     border-radius: 10px;
-    border: 1px solid var(--thprimaryird);
+    border: 1px solid var(--third);
     text-align: center;
 }
 
@@ -70,6 +70,14 @@ a {
 
 .btn {
     border-radius: 20px;
+}
+
+.btn-lg {
+    padding: 5px 300px;
+}
+
+.btn-xl {
+    padding: 5px 300px;
 }
 
 .error-form {
