@@ -4,12 +4,21 @@ class PostRepository
 {
 
     private $pdo;
-
+    
+    /**
+     * Construct function that calls PDO
+     * @param \PDO $pdo
+     * @return void
+     */
     public function __construct(PDO $pdo)
     {
         $this->pdo = $pdo;
     }
 
+    /**
+     * Fuction search All article in database
+     * @return array
+     */
     public function searchAll()
     {
         $sql = "SELECT id, name_title, content_post, date_post FROM content";
@@ -19,6 +28,10 @@ class PostRepository
         return $results;
     }
 
+    /**
+     * Fuction search unique article in database
+     * @return mixed
+     */
     public function searchArticle(string $id): array
     {
         $sql = "SELECT id, name_title, content_post, date_post FROM content WHERE id = ?";
@@ -28,6 +41,10 @@ class PostRepository
         return $results;
     }
 
+    /**
+     * Fuction save article POST in database
+     * @return mixed
+     */
     public function saveArticle(Content $article)
     {
         $sql = "
@@ -44,6 +61,10 @@ class PostRepository
         ]);
     }
 
+    /**
+     * Fuction save article POST in database
+     * @param int
+     */
     public function deleteArticle($id)
     {
         $sql = "DELETE FROM content WHERE id = :id ";

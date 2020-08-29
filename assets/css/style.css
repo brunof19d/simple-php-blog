@@ -5,6 +5,9 @@
     --third: mediumblue;
 }
 
+
+/* TAGS */
+
 html body {
     background-color: var(--secondary);
 }
@@ -26,6 +29,12 @@ a {
     text-align: center;
     color: mediumblue;
 }
+
+
+/* CLASSES */
+
+
+/* CONTENT */
 
 .banner {
     background: url("../images/php-header.jpg");
@@ -68,6 +77,9 @@ a {
     border-radius: 10px;
 }
 
+
+/* BUTTONS */
+
 .btn {
     border-radius: 20px;
 }
@@ -79,6 +91,9 @@ a {
 .btn-xl {
     padding: 5px 300px;
 }
+
+
+/* SPAN */
 
 .error-form {
     color: red;

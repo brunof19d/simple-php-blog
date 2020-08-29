@@ -1,28 +1,17 @@
 <?php
 
-require_once "database.php";
-require_once "Content.php";
-require_once "PostRepository.php";
+// Calling settings
+require_once 'config.php';
+
 require_once "includes/header-admin.php";
 
-$article = new Content();
-$results = new PostRepository($pdo);
-
-
-
-function tem_post()
-{
-  if (count($_POST) > 0) {
-    return true;
-  }
-
-  return false;
-}
-
+// Variable for validation form
+$results = $result;
 $noPost = false;
 $validateError = [];
 
-if (tem_post()) {
+if (checkPost()) {
+
   if (array_key_exists('name_title', $_POST) && strlen($_POST['name_title']) > 0) {
     $article->setNameTitle($_POST['name_title']);
   } else {
@@ -38,8 +27,7 @@ if (tem_post()) {
   }
 
   if (!$noPost) {
-    $results->saveArticle($article);
-
+    $results->saveArticle($article); // Variable to call PostRepository class and save POST
     header('Location: index.php');
     die();
   }

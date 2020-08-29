@@ -5,14 +5,13 @@ class Content
     private $id;
     private $name;
     private $content;
-    private $date;
 
     public function setId($id)
     {
         $this->id = $id;
     }
 
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
@@ -22,7 +21,7 @@ class Content
         $this->name = $name;
     }
 
-    public function getNameTitle()
+    public function getNameTitle(): string
     {
         return $this->name;
     }
@@ -32,7 +31,7 @@ class Content
         $this->content = $content;
     }
 
-    public function getContent()
+    public function getContent(): string
     {
         return $this->content;
     }

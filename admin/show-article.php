@@ -1,9 +1,9 @@
 <?php
 
-require_once "database.php";
-require_once "PostRepository.php";
+// Calling settings
+require_once 'config.php';
 
-$result = new PostRepository($pdo);
+// Variable to call fuction search unique Article to show
 $results = $result->searchArticle($_GET['id']);
 
 require_once "includes/header-admin.php";

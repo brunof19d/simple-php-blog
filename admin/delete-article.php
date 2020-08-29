@@ -1,9 +1,9 @@
 <?php
 
-require "database.php";
-require_once "PostRepository.php";
+// Calling settings
+require_once 'config.php';
 
-$results = new PostRepository($pdo);
-$results->deleteArticle($_GET['id']);
+// Variable to call fuction delete Article
+$results = $result->deleteArticle($_GET['id']);
 
 header('Location: index.php');
