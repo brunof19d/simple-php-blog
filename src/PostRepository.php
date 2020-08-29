@@ -21,7 +21,7 @@ class PostRepository
 
     public function searchArticle(string $id): array
     {
-        $sql = "SELECT id, name_title, content_post FROM content WHERE id = ?";
+        $sql = "SELECT id, name_title, content_post, date_post FROM content WHERE id = ?";
         $statement = $this->pdo->prepare($sql);
         $statement->execute([$id]);
         $results = $statement->fetch(PDO::FETCH_ASSOC);
