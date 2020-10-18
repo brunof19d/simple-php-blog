@@ -1,7 +1,7 @@
 <?php
 
 // Calling settings
-require_once 'config.php';
+require_once __DIR__ . '/../src/config.php';
 
 // Variable to call all articles posted
 $results = $result->searchAll();

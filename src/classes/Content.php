@@ -2,19 +2,9 @@
 
 class Content
 {
-    private $id;
-    private $name;
-    private $content;
-
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    public function getId(): int
-    {
-        return $this->id;
-    }
+    private int $id;
+    private string $name;
+    private string $content;
 
     public function setNameTitle($name)
     {
@@ -36,4 +26,13 @@ class Content
         return $this->content;
     }
 
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
 }

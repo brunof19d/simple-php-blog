@@ -15,7 +15,7 @@ html body {
 footer {
     height: 50px;
     text-align: center;
-    border: 5px solid var(--primary);
+    margin-top: 10px;
 }
 
 h1 {
@@ -26,8 +26,9 @@ h1 {
 }
 
 a {
+    color: black;
     text-align: center;
-    color: mediumblue;
+    text-decoration: none;
 }
 
 
@@ -49,8 +50,8 @@ a {
 }
 
 .title-post {
+    font-size: 20px;
     text-align: center;
-    color: mediumblue;
     background-color: lightgrey;
     border-radius: 10px;
     border: 1px solid var(--primary);
@@ -58,7 +59,7 @@ a {
 
 .title-post-admin {
     font-size: 20px;
-    color: mediumblue;
+    color: black;
     background-color: lightgrey;
     border-radius: 10px;
     border: 1px solid var(--third);
@@ -75,6 +76,12 @@ a {
 .content-post {
     border: 1px solid var(--primary);
     border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+}
+
+.date-post {
+    font-size: 15px;
 }
 
 
@@ -83,15 +90,6 @@ a {
 .btn {
     border-radius: 20px;
 }
-
-.btn-lg {
-    padding: 5px 300px;
-}
-
-.btn-xl {
-    padding: 5px 300px;
-}
-
 
 /* SPAN */
 

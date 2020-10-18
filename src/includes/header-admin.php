@@ -10,22 +10,11 @@
 </head>
 
 <body>
-
     <header class="container-xl mt-3 banner"></header>
     <h1 class="container-xl mt-3 p-2 main">Administrative page</h1>
 
-
     <nav class="container-xl mt-3 p-2 main navbar navbar-expand-sm bg-dark navbar-dark">
         <ul class="nav navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-        </ul>
-
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Logout</a>
-            </li>
-
+            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
         </ul>
     </nav>

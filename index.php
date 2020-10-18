@@ -1,9 +1,4 @@
 <?php
-
-// Calling settings
-require_once 'config.php';
-
-// Calling templates
-
-require_once "view/template_home.php";
+require_once 'src/config.php';
+require_once "src/view/template_home.php";
 

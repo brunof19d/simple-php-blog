@@ -1,9 +1,14 @@
 <?php
 
-// Calling settings
-require_once 'config.php';
+require_once __DIR__ . '/../src/config.php';
 
-// Variable to call fuction delete Article
-$results = $result->deleteArticle($_GET['id']);
+try {
+    $id = filter_var($_GET['id'], FILTER_VALIDATE_INT);
+    if (!$id) throw new Exception('ID Invalid');
+    $results = $result->deleteArticle($id);
+    header('Location: index.php');
+} catch (Exception $error) {
+    echo 'Error: ',  $error->getMessage();
+    die();
+}
 
-header('Location: index.php');
